@@ -52,7 +52,7 @@
 	//セッション開始
 	session_start();
 
-	date_default_timezone_set('UTC');
+	date_default_timezone_set('Asia/Tokyo');
 
 	// $time = time();
 
