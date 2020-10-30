@@ -3,8 +3,8 @@
 	{
 
 		$json_head = "{\"memory\":{";
-		$json_posts_head = "\"counts\":{";
-		$json_posts_main = "\"$cnt\":{" .
+		$json_memory_head = "\"counts\":{";
+		$json_memory_main = "\"$cnt\":{" .
 			"\"posts_spots_id\":\"$spots_id\"," .
 			"\"count\":\"$count\"" .
 		"}";
