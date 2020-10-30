@@ -3,7 +3,7 @@
 	{
 
 		$json_head = "{\"Memory\":{";
-		$json_posts_head = "\"posts\":{";
+		$json_posts_head = "\"counts\":{";
 		$json_posts_main = "\"$cnt\":{" .
 			"\"posts_spots_id\":\"$spots_id\"," .
 			"\"count\":\"$count\"" .
