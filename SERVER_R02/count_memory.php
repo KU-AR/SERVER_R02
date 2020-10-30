@@ -2,32 +2,32 @@
 	function make_json_txt($spots_id, $count, $json, $cnt, $cnt_max)
 	{
 
-		$json_head = "{\"Memory\":{";
+		$json_head = "{\"memory\":{";
 		$json_posts_head = "\"counts\":{";
 		$json_posts_main = "\"$cnt\":{" .
 			"\"posts_spots_id\":\"$spots_id\"," .
 			"\"count\":\"$count\"" .
 		"}";
-		$json_posts_continue = ",";
-		$json_posts_tail = "}";
-		$json_posts_all_tail = "}";
+		$json_memory_continue = ",";
+		$json_memory_tail = "}";
+		$json_memory_all_tail = "}";
 		$json_tail = "}";
 		
 		//初回
 		if($json == ""){
-			$json = $json_head . $json_posts_head;
+			$json = $json_head . $json_memory_head;
 		}
 
 		//posts追加
-		$json = $json . $json_posts_main;
+		$json = $json . $json_memory_main;
 
 		//次がある
 		if($cnt < $cnt_max){
-			$json = $json . $json_posts_continue;
+			$json = $json . $json_memory_continue;
 		}
 		//最後
 		else{
-			$json = $json . $json_posts_tail . $json_posts_all_tail . $json_tail;
+			$json = $json . $json_memory_tail . $json_memory_all_tail . $json_tail;
 		}
 		return $json;
 	}
